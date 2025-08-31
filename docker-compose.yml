@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: example-three-tier.Web/Dockerfile
+    container_name: example-three-tier-api
+    depends_on:
+      - postgres
+    environment:
+      # Connection string points to postgres service (not localhost)
+      ConnectionStrings__Default: "Host=postgres;Port=5432;Database=exampledb;Username=myuser;Password=mypassword"
+      ASPNETCORE_ENVIRONMENT: "Development"
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:16
+    container_name: example-three-tier-postgres
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: exampledb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  pgdata:

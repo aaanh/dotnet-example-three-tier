@@ -1,0 +1,66 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.dll
+*.exe
+*.app
+*.appx
+*.cache
+*.dbmdl
+*.bak
+*.log
+*.pdb
+
+# EF Core
+example-three-tier.Data/Migrations/*Designer.cs
+example-three-tier.Data/Migrations/*Snapshot.cs
+# Keep the actual migration .cs files
+!example-three-tier.Data/Migrations/*.cs
+
+# Dotnet tools
+*.dotnet
+.dotnet/
+
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Environment
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+*.pid
+*.seed
+*.tar
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Node/npm (if front-end is added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

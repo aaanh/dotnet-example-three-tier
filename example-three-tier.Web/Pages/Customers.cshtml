@@ -1,0 +1,26 @@
+@page
+@model example_three_tier.Web.Pages.CustomersModel
+@{
+  ViewData["Title"] = "Customers";
+}
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+  <p style="color:red">@Model.ErrorMessage</p>
+}
+
+<h1>Customers</h1>
+
+@if (Model.Customers.Count == 0)
+{
+  <p>No customers found.</p>
+}
+else
+{
+  <ul>
+    @foreach (var customer in Model.Customers)
+    {
+      <li>@customer.Id - @customer.Name</li>
+    }
+  </ul>
+}
