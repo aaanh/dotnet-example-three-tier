@@ -12,4 +12,3 @@ jobs:
 
   test:
     uses: ./.github/workflows/test.yaml
-    needs: build
