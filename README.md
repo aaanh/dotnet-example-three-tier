@@ -3,11 +3,11 @@
 
 # Example Three-Tier Application
 
-[![CI](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/ci.yml/badge.svg)](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/ci.yaml)
+[![CI](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/ci.yaml/badge.svg)](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/ci.yaml)
 
-[![.NET Build](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/dotnet-build.yml/badge.svg)](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/dotnet-build.yaml)
+[![.NET Build](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/dotnet-build.yaml/badge.svg)](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/dotnet-build.yaml)
 
-[![Test](https://github.com/<YOUR_USERNAME>/<YOUR_REPO>/actions/workflows/test.yaml/badge.svg)](https://github.com/<YOUR_USERNAME>/<YOUR_REPO>/actions/workflows/test.yaml)
+[![Test](https://github.com/aaanh/dotnet-example-three-tier/actions/workflows/test.yaml/badge.svg)](https://github.com/<YOUR_USERNAME>/<YOUR_REPO>/actions/workflows/test.yaml)
 
 
 This is a sample **3-tier .NET 8 application** using:
